@@ -21,6 +21,7 @@ func _physics_process(delta):
 	#if my distance from parent is greater than GAP: change velocity to move me towards parent
 	if pos.distance_to(parent_pos) > GAP:
 		velocity = direction
+		set_rotation(direction.angle())
 
 	velocity = move_and_slide(velocity * SPEED)
 	
