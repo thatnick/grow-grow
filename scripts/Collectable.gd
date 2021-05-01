@@ -1,5 +1,7 @@
 extends Area2D
 
+signal collected(value)
+
 var value = 1
 
 func collected():
@@ -7,5 +9,4 @@ func collected():
 
 
 func _on_Collectable_body_entered(body):
-	if body.has_method("add_tail"):
-		body.add_tail()
+	emit_signal("collected", value)
