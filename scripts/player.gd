@@ -12,7 +12,8 @@ func _on_Collectable_collected(value):
 func add_tail():
 	print("added tail")
 	var new_tail = tail.instance()
-	var last_tail = get_child(get_child_count()-1)
+	var last_tail = get_child(get_child_count() - 1)
 	print(str(last_tail.name))
-	new_tail.transform.origin = last_tail.transform.origin - Vector2(50, 50)
-	$PhysicHead.add_child_below_node(last_tail, new_tail)
+	# Position of new tail below TODO FIX THIS
+	new_tail.position = last_tail.position
+	last_tail.add_child(new_tail)
