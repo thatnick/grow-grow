@@ -8,7 +8,16 @@
 [node name="player" type="Node" parent="."]
 
 [node name="PhysicHead" parent="player" instance=ExtResource( 1 )]
-position = Vector2( 109, 103 )
+position = Vector2( 139, 106 )
 
 [node name="PhysicTail" parent="player" instance=ExtResource( 2 )]
-position = Vector2( 118, 211 )
+position = Vector2( 104, 105 )
+
+[node name="PhysicTail2" parent="player" instance=ExtResource( 2 )]
+position = Vector2( 71, 110 )
+
+[node name="PhysicTail3" parent="player" instance=ExtResource( 2 )]
+position = Vector2( 35, 111 )
+
+[node name="PhysicTail4" parent="player" instance=ExtResource( 2 )]
+position = Vector2( 2, 123 )

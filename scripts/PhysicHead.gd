@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 var velocity = Vector2(0, 0)
-const SPEED = 20
+const SPEED = 60
 
 func _physics_process(delta):
 	velocity.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
