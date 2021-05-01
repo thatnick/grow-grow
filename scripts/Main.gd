@@ -16,10 +16,15 @@ func _ready():
 	for i in NUM_ENEMIES:
 		spawn_enemy()
 	
-	$EnemyTimer.start()
+	$EnemyTimer.start(10)
+	$EnemyTimer.connect("timeout", self, "_on_EnemyTimer_timeout")
 
 func _on_Collectable_collected(value):
 	spawn_collectable()
+
+func _on_EnemyTimer_timeout():
+	for i in 5:
+		spawn_enemy()
 
 func spawn_collectable():
 	var new_collectable = collectable.instance()
