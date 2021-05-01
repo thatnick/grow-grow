@@ -11,6 +11,18 @@ script = ExtResource( 3 )
 position = Vector2( 174.258, 135.782 )
 
 [node name="Collectable" parent="." instance=ExtResource( 2 )]
-position = Vector2( 392.399, 138.008 )
+position = Vector2( 432.784, 103.665 )
+
+[node name="Collectable2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 274.743, 55.9667 )
+
+[node name="Collectable3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 318.307, 256.618 )
+
+[node name="Collectable4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 502.105, 239.765 )
 
 [connection signal="collected" from="Collectable" to="Player" method="_on_Collectable_collected"]
+[connection signal="collected" from="Collectable2" to="Player" method="_on_Collectable_collected"]
+[connection signal="collected" from="Collectable3" to="Player" method="_on_Collectable_collected"]
+[connection signal="collected" from="Collectable4" to="Player" method="_on_Collectable_collected"]
