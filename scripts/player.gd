@@ -14,11 +14,8 @@ func _on_Collectable_collected(value):
 	add_tail()
 
 func add_tail():
-	print("added tail")
 	var new_tail = tail.instance()
 	var last_tail = get_child(get_child_count() - 1)
-	print(str(last_tail.name))
-	var offset = Vector2(cos(last_tail.rotation + PI), sin(last_tail.rotation +PI)) * 32
-	print(offset)
+	var offset = Vector2(cos(last_tail.rotation + PI), sin(last_tail.rotation + PI)) * 32
 	new_tail.position = last_tail.position + offset
 	add_child(new_tail)

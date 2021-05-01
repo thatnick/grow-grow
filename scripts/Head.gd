@@ -1,14 +1,27 @@
 extends KinematicBody2D
 
 var velocity = Vector2(0, 0)
-var direction = Vector2(0,0)
+var direction = Vector2().angle()
 const SPEED = 100
 
+func get_input():
+	velocity = Vector2()
+	if Input.is_action_pressed("ui_right"):
+		velocity.x += 1
+		direction = velocity.angle()
+	if Input.is_action_pressed("ui_left"):
+		velocity.x -= 1
+		direction = velocity.angle()
+	if Input.is_action_pressed("ui_down"):
+		velocity.y += 1
+		direction = velocity.angle()
+	if Input.is_action_pressed("ui_up"):
+		velocity.y -= 1
+		direction = velocity.angle()
+	velocity = velocity.normalized() * SPEED
+
 func _physics_process(delta):
-	velocity.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
-	velocity.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+	get_input()
+	velocity = move_and_slide(velocity)
 	
-	
-	set_rotation(velocity.angle())
-	velocity = move_and_slide(velocity.normalized() * SPEED)
-	
+	set_rotation(direction)

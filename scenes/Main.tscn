@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Collectable.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scripts/Main.gd" type="Script" id=3]
+[ext_resource path="res://scenes/Enemy.tscn" type="PackedScene" id=4]
 
 [node name="Main" type="Node"]
 script = ExtResource( 3 )
@@ -21,6 +22,9 @@ position = Vector2( 318.307, 256.618 )
 
 [node name="Collectable4" parent="." instance=ExtResource( 2 )]
 position = Vector2( 502.105, 239.765 )
+
+[node name="Enemy" parent="." instance=ExtResource( 4 )]
+position = Vector2( 68.2559, 356.247 )
 
 [connection signal="collected" from="Collectable" to="Player" method="_on_Collectable_collected"]
 [connection signal="collected" from="Collectable2" to="Player" method="_on_Collectable_collected"]
