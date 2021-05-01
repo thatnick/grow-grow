@@ -6,7 +6,8 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 15.7329, 14.794 )
 
-[node name="Collectable" type="StaticBody2D"]
+[node name="Collectable" type="Area2D"]
+collision_layer = 8
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
