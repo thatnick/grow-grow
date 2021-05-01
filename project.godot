@@ -18,6 +18,10 @@ run/main_scene="res://scenes/Main.tscn"
 window/size/width=640
 window/size/height=640
 
+[global]
+
+gls=false
+
 [layer_names]
 
 2d_physics/layer_1="player"
