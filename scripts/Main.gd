@@ -23,7 +23,6 @@ func _on_Collectable_collected(value):
 	spawn_collectable()
 
 func _on_EnemyTimer_timeout():
-	print("HELLO")
 	for i in 5:
 		spawn_enemy()
 

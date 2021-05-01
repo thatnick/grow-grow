@@ -2,11 +2,10 @@ extends KinematicBody2D
 
 var velocity = Vector2(0, 0)
 var direction = Vector2().angle()
-var speed = 100
 
 func get_input():
-	speed = get_parent().speed
 	velocity = Vector2()
+	var moving = false
 	if Input.is_action_pressed("ui_right"):
 		velocity.x += 1
 		direction = velocity.angle()
@@ -19,7 +18,8 @@ func get_input():
 	if Input.is_action_pressed("ui_up"):
 		velocity.y -= 1
 		direction = velocity.angle()
-	velocity = velocity.normalized() * speed
+	
+	velocity = velocity.normalized() * get_parent().speed
 
 func _physics_process(delta):
 	get_input()
@@ -28,4 +28,4 @@ func _physics_process(delta):
 	set_rotation(direction)
 
 func hit():
-	print("You died?")
+	get_tree().change_scene("res://scenes/GameOver.tscn")

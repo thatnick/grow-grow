@@ -4,7 +4,7 @@
 [ext_resource path="res://sprites/player/colinbody1.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 9.58482
+radius = 12.9365
 
 [node name="PhysicTail" type="KinematicBody2D"]
 script = ExtResource( 1 )
