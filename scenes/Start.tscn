@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
+[ext_resource path="res://scripts/PlayButton.gd" type="Script" id=1]
 [ext_resource path="res://fonts/PressStart2P-Regular.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="StyleBoxFlat" id=1]
@@ -25,7 +26,8 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 639.0
+margin_left = -1.25995
+margin_right = 637.74
 margin_bottom = 637.0
 color = Color( 0.388235, 0.631373, 0.309804, 1 )
 __meta__ = {
@@ -77,10 +79,19 @@ Eat leaves to grow.
 
 Don't get eaten."
 
-[node name="Button" type="Button" parent="."]
+[node name="PlayButton" type="Button" parent="."]
 margin_left = 165.859
-margin_top = 294.881
+margin_top = 293.621
 margin_right = 482.859
-margin_bottom = 396.881
+margin_bottom = 395.621
 custom_fonts/font = SubResource( 4 )
-text = "PRESS TO PLAY"
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 0.992157, 0, 1 )
+text = "PRESS HERE TO PLAY"
+flat = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="PlayButton" to="PlayButton" method="_on_PlayButton_pressed"]
