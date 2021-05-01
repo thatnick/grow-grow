@@ -12,3 +12,5 @@ position = Vector2( 174.258, 135.782 )
 
 [node name="Collectable" parent="." instance=ExtResource( 2 )]
 position = Vector2( 392.399, 138.008 )
+
+[connection signal="collected" from="Collectable" to="Player" method="_on_Collectable_collected"]

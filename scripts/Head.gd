@@ -8,7 +8,3 @@ func _physics_process(delta):
 	velocity.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	
 	velocity = move_and_slide(velocity.normalized() * SPEED)
-
-func add_tail():
-	# this makes me cry inside
-	get_parent().add_tail()
