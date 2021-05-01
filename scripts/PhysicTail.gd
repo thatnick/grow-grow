@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const SPEED = 70
+const SPEED = 100
 const GAP = 5
 
 var parent_pos = Vector2()
