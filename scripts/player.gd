@@ -7,10 +7,10 @@ var timer = 120
 	#timer = TIMER_INITAL
 
 func _physics_process(delta):
-	timer = timer - 1
-	if timer == 0:
-		add_tail()
-		timer = 120
+#	timer = timer - 1
+#	if timer == 0:
+#		add_tail()
+#		timer = 120
 	pass
 
 func add_tail():

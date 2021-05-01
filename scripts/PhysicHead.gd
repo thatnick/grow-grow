@@ -9,4 +9,6 @@ func _physics_process(delta):
 	
 	velocity = move_and_slide(velocity.normalized() * SPEED)
 
-
+func add_tail():
+	# this makes me cry inside
+	get_parent().add_tail()
