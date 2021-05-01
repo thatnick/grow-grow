@@ -5,8 +5,7 @@ var velocity = Vector2()
 var dir = Vector2()
 
 func _ready():
-	velocity = Vector2(speed, 0)
-	rotation = dir.angle()
+	velocity = Vector2(speed, -1).rotated(randi() % int(PI * 2))
 
 func _physics_process(delta):
 	rotation = velocity.angle()
@@ -16,6 +15,6 @@ func _physics_process(delta):
 		queue_free()
 		collision.collider.hit()
 		return
+		
 	if collision:
 		velocity = velocity.bounce(collision.normal)
-		print("Collider name is " + str(collision.collider.name))
