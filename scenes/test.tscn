@@ -20,4 +20,4 @@ position = Vector2( 71, 110 )
 position = Vector2( 35, 111 )
 
 [node name="PhysicTail4" parent="player" instance=ExtResource( 2 )]
-position = Vector2( 2, 123 )
+position = Vector2( 32, 106 )

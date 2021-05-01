@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
-const SPEED = 60
-const GAP = 20
+const SPEED = 70
+const GAP = 5
 
 var parent_pos = Vector2()
 var pos = Vector2()
@@ -10,15 +10,6 @@ var velocity = Vector2(0,0)
 
 
 func _physics_process(delta):
-
-
-	#if I'm the first part of the tail get PhysicHead as my "parent" postion
-	#if get_parent().get_node("PhysicHead"):
-	#	parent_pos = get_parent().get_node("PhysicHead").position
-	#else use my parent nodes posito
-	#else:
-	#	parent_pos = get_parent().position
-
 
 	#get the child before me and make its position my parent's postion
 	parent_pos = get_parent().get_child(self.get_position_in_parent() - 1).position 
