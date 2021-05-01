@@ -28,7 +28,7 @@ position = Vector2( 318.307, 256.618 )
 position = Vector2( 502.105, 239.765 )
 
 [node name="Enemy" parent="." instance=ExtResource( 4 )]
-position = Vector2( 68.2559, 356.247 )
+position = Vector2( 66.243, 388.051 )
 
 [connection signal="collected" from="Collectable" to="Player" method="_on_Collectable_collected"]
 [connection signal="collected" from="Collectable2" to="Player" method="_on_Collectable_collected"]
