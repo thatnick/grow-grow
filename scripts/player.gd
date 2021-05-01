@@ -5,12 +5,8 @@ var tail = preload("res://scenes/Tail.tscn")
 const SPEED_FACTOR = 50
 var speed  = 0
 
-
-
 func _ready():
 	_update_speed()
-
-
 
 func _physics_process(delta):
 	_update_speed()
