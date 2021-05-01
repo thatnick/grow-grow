@@ -2,6 +2,10 @@ extends Node
 
 var tail = preload("res://scenes/Tail.tscn")
 
+#ideally we would want to work out the offset to be the radius of the collision shape of the new_tail plus the 0
+const offset = 32
+
+
 func _physics_process(delta):
 	pass
 	
@@ -14,6 +18,5 @@ func add_tail():
 	var new_tail = tail.instance()
 	var last_tail = get_child(get_child_count() - 1)
 	print(str(last_tail.name))
-	# Position of new tail below TODO FIX THIS
 	new_tail.position = last_tail.position
-	last_tail.add_child(new_tail)
+	add_child(new_tail)
