@@ -4,6 +4,8 @@ var tail = preload("res://scenes/Tail.tscn")
 
 const SPEED_FACTOR = 50
 var speed  = 0
+var score = 0
+
 
 func _ready():
 	_update_speed()
@@ -14,6 +16,7 @@ func _physics_process(delta):
 	
 func _on_Collectable_collected(value):
 	print("collected thing with value: " + str(value))
+	score += value
 	add_tail()
 
 func add_tail():
