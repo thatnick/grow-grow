@@ -16,4 +16,4 @@ func add_tail():
 	print(str(last_tail.name))
 	# Position of new tail below TODO FIX THIS
 	new_tail.position = last_tail.position
-	last_tail.add_child(new_tail)
+	add_child(new_tail)
