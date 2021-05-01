@@ -8,6 +8,7 @@
 radius = 14.9513
 
 [node name="PhysicHead" type="KinematicBody2D"]
+collision_mask = 17
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

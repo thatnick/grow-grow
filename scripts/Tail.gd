@@ -1,11 +1,11 @@
 extends KinematicBody2D
 
-const SPEED = 100
-const GAP = 5
+const GAP = 1
 
 var parent_pos = Vector2()
 var pos = Vector2()
 var direction = Vector2()
+var speed = 100
 var velocity = Vector2(0,0)
 
 
@@ -22,7 +22,7 @@ func _physics_process(delta):
 	if pos.distance_to(parent_pos) > GAP:
 		velocity = direction
 		set_rotation(direction.angle())
-
-	velocity = move_and_slide(velocity * SPEED)
+	speed = get_parent().speed
+	velocity = move_and_slide(velocity * speed)
 	
 	
