@@ -26,3 +26,6 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity)
 	
 	set_rotation(direction)
+
+func hit():
+	print("You died?")
