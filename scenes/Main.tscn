@@ -13,19 +13,19 @@ script = ExtResource( 3 )
 [node name="Background" parent="." instance=ExtResource( 6 )]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 174.258, 135.782 )
+position = Vector2( 641.68, 640.206 )
 
 [node name="Collectable" parent="." instance=ExtResource( 2 )]
-position = Vector2( 432.784, 103.665 )
+position = Vector2( 382.946, 386.837 )
 
 [node name="Collectable2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 274.743, 55.9667 )
+position = Vector2( 866.761, 903.972 )
 
 [node name="Collectable3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 318.307, 256.618 )
+position = Vector2( 385.513, 921.883 )
 
 [node name="Collectable4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 502.105, 239.765 )
+position = Vector2( 845.687, 531.243 )
 
 [node name="Enemy" parent="." instance=ExtResource( 4 )]
 position = Vector2( 66.243, 388.051 )
