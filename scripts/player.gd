@@ -2,7 +2,7 @@ extends Node
 
 var tail = preload("res://scenes/Tail.tscn")
 
-const SPEED_FACTOR = 50
+const SPEED_FACTOR = 7.5
 var speed  = 0
 var score = 0
 
