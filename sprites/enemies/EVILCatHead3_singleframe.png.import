@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/EVILCatHead3_singleframe.png-fff0d36365b9dc92fefc4183f0230e2c.stex"
+path="res://.import/EVILCatHead3_singleframe.png-388400da5a53b9d9600ac1a6258a14ff.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/player/EVILCatHead3_singleframe.png"
-dest_files=[ "res://.import/EVILCatHead3_singleframe.png-fff0d36365b9dc92fefc4183f0230e2c.stex" ]
+source_file="res://sprites/enemies/EVILCatHead3_singleframe.png"
+dest_files=[ "res://.import/EVILCatHead3_singleframe.png-388400da5a53b9d9600ac1a6258a14ff.stex" ]
 
 [params]
 
