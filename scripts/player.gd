@@ -3,8 +3,14 @@ extends Node
 onready var manager = get_node("/root/Manager")
 const tail = preload("res://scenes/Tail.tscn")
 var speed  = 120
+var moving = false
 const speed_increment = 5
 	
+	
+func _physics_process(delta):
+	moving = $Head.moving
+
+
 func _on_Collectable_collected(value):
 	manager.tails += value
 	add_tail()

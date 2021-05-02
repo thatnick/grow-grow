@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 const GAP = 32
+var moving = false
 
 func _ready():
 	var next_child_up = get_parent().get_child(get_position_in_parent() - 1)
@@ -19,6 +20,11 @@ func _physics_process(_delta):
 		
 		set_rotation(direction.angle())
 		velocity = move_and_slide(velocity * (get_parent().speed * speed_multiplier))
+		
+
+	set_moving()
+	set_moving_anim()
+
 	
 func hit():
 	var player = get_parent()
@@ -30,3 +36,14 @@ func hit():
 			player.tail_hit()
 			player.get_child(i).queue_free()
 	
+
+func set_moving():
+	moving = get_parent().moving
+	
+func set_moving_anim():
+	if not moving && $AnimatedSprite.get_animation() != "Idle":
+		#switch to idle animation
+		$AnimatedSprite.set_animation("Idle")
+	if moving && $AnimatedSprite.get_animation() != "Walking":
+		#switch to the Walking animation
+		$AnimatedSprite.set_animation("Walking")

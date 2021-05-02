@@ -3,6 +3,17 @@ extends KinematicBody2D
 onready var manager = get_node("/root/Manager")
 var velocity = Vector2()
 var direction = Vector2().angle()
+var moving = false
+
+
+
+func _physics_process(_delta):
+	get_input()
+	set_move_anim()	
+	velocity = move_and_slide(velocity)
+	
+	set_rotation(direction)
+
 
 func get_input():
 	velocity = Vector2()
@@ -20,12 +31,24 @@ func get_input():
 		direction = velocity.angle()
 	
 	velocity = velocity.normalized() * get_parent().speed
-
-func _physics_process(_delta):
-	get_input()
-	velocity = move_and_slide(velocity)
-	
-	set_rotation(direction)
+	update_moving()
 
 func hit():
 	manager.game_over()
+
+func update_moving():
+	if velocity != Vector2(0,0):
+		moving = true
+	else:
+		moving = false
+		
+func set_move_anim():
+	if not moving && $AnimatedSprite.get_animation() != "Idle":
+		#switch to idle animation
+		$AnimatedSprite.set_animation("Idle")
+	if moving && $AnimatedSprite.get_animation() != "Walking":
+		#switch to the Walking animation
+		$AnimatedSprite.set_animation("Walking")
+
+	pass
+	
