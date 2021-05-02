@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Colinbody1.png-2294fc218c5286633b5f01c3b3e87dc4.stex"
+path="res://.import/colinbody1.png-77cce25d115c1f1d6163cd92da18c917.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/player/Colinbody1.png"
-dest_files=[ "res://.import/Colinbody1.png-2294fc218c5286633b5f01c3b3e87dc4.stex" ]
+source_file="res://sprites/player/colinbody1.png"
+dest_files=[ "res://.import/colinbody1.png-77cce25d115c1f1d6163cd92da18c917.stex" ]
 
 [params]
 
