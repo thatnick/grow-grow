@@ -11,8 +11,10 @@ const enemy2 = preload("res://scenes/Enemy2.tscn")
 func _ready():
 	spawn_collectable()
 	for i in NUM_ENEMIES:
-		spawn_enemy(enemy1)
-		spawn_enemy(enemy2)
+		if manager.lvl >= 1:
+			spawn_enemy(enemy1)
+		if manager.lvl >= 2:
+			spawn_enemy(enemy2)
 	
 	$EnemyTimer.start(10)
 	$EnemyTimer.connect("timeout", self, "_on_EnemyTimer_timeout")
@@ -21,9 +23,11 @@ func _on_Collectable_collected(_value):
 	spawn_collectable()
 
 func _on_EnemyTimer_timeout():
-	for i in NUM_ENEMIES:
-		spawn_enemy(enemy1)
-		spawn_enemy(enemy2)
+	for i in manager.lvl * 2:
+		if manager.lvl >= 1:
+			spawn_enemy(enemy1)
+		if manager.lvl >= 2:
+			spawn_enemy(enemy2)
 
 func spawn_collectable():
 	var new_collectable = collectable.instance()
