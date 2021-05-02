@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Caterpillar Background_2_blue.png-2099fd4609bf94382eeffa429355b02d.stex"
+path="res://.import/lb1.png-107424c2c48ba2b6c5b387e06fae6654.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/background/Caterpillar Background_2_blue.png"
-dest_files=[ "res://.import/Caterpillar Background_2_blue.png-2099fd4609bf94382eeffa429355b02d.stex" ]
+source_file="res://sprites/enemies/lb1.png"
+dest_files=[ "res://.import/lb1.png-107424c2c48ba2b6c5b387e06fae6654.stex" ]
 
 [params]
 
