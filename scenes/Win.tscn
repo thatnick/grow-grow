@@ -1,7 +1,23 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://scripts/PlayAgain.gd" type="Script" id=1]
 [ext_resource path="res://fonts/PressStart2P-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://sprites/butterfly/bf1.png" type="Texture" id=3]
+[ext_resource path="res://sprites/butterfly/bf2.png" type="Texture" id=4]
+[ext_resource path="res://sprites/butterfly/bf13.png" type="Texture" id=5]
+[ext_resource path="res://sprites/butterfly/bf6.png" type="Texture" id=6]
+[ext_resource path="res://sprites/butterfly/bf4.png" type="Texture" id=7]
+[ext_resource path="res://sprites/butterfly/bf5.png" type="Texture" id=8]
+[ext_resource path="res://sprites/butterfly/bf10.png" type="Texture" id=9]
+[ext_resource path="res://sprites/butterfly/bf9.png" type="Texture" id=10]
+[ext_resource path="res://sprites/butterfly/bf14.png" type="Texture" id=11]
+[ext_resource path="res://sprites/butterfly/bf3.png" type="Texture" id=12]
+[ext_resource path="res://sprites/butterfly/bf16.png" type="Texture" id=13]
+[ext_resource path="res://sprites/butterfly/bf7.png" type="Texture" id=14]
+[ext_resource path="res://sprites/butterfly/bf11.png" type="Texture" id=15]
+[ext_resource path="res://sprites/butterfly/bf12.png" type="Texture" id=16]
+[ext_resource path="res://sprites/butterfly/bf8.png" type="Texture" id=17]
+[ext_resource path="res://sprites/butterfly/bf15.png" type="Texture" id=18]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 0.478431 )
@@ -10,11 +26,19 @@ corner_radius_top_right = 40
 corner_radius_bottom_right = 40
 corner_radius_bottom_left = 40
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 12 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 14 ), ExtResource( 17 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 18 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=3]
 size = 48
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 font_data = ExtResource( 2 )
 
 [node name="Win" type="Control"]
@@ -39,12 +63,19 @@ margin_right = 1059.45
 margin_bottom = 544.776
 custom_styles/panel = SubResource( 1 )
 
+[node name="AnimatedSprite" type="AnimatedSprite" parent="msg"]
+position = Vector2( 180.417, 229.836 )
+scale = Vector2( 2.5, 2.5 )
+frames = SubResource( 2 )
+frame = 13
+playing = true
+
 [node name="Label" type="Label" parent="msg"]
-margin_left = -24.418
-margin_top = 45.4183
-margin_right = 1079.58
-margin_bottom = 331.418
-custom_fonts/font = SubResource( 2 )
+margin_left = 333.787
+margin_top = 77.449
+margin_right = 1042.79
+margin_bottom = 363.449
+custom_fonts/font = SubResource( 3 )
 text = "You won.
 
 You are now a 
@@ -61,7 +92,7 @@ margin_left = 345.458
 margin_top = 420.967
 margin_right = 741.458
 margin_bottom = 525.967
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0.968627, 1, 0, 1 )
 text = "Press here to play again"
