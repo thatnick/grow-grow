@@ -7,16 +7,33 @@ const LVLTOTAL = 3
 
 var tails = 3
 
+#Set up the musicplayer variables
+const musicplayer = preload("res://scenes/MusicPlayer.tscn")
+var IntroMusic = load("res://music/Intro.mp3")
+var Music = load("res://music/Music.mp3")
+var Congrat = load("res://music/Congrat.mp3")
+var GameOver = load("res://music/GameOver.mp3")
+
+
+
 #variables for levels - levels need to know: 
 #what level number they are. 
 #What their win state is. 
 #Their difficulty - e.g. freq, type, num of enemies
 var lvl = 1
 
+
+
+
 func _ready():
 	rng = RandomNumberGenerator.new()
 	rng.randomize()
 	randomize()
+	
+	var music = musicplayer.instance()
+	add_child(music)
+	music.set_stream(IntroMusic) 
+	music.play()
 
 func _physics_process(delta):
 	if tails >= GOAL:

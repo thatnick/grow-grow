@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/PlayButton.gd" type="Script" id=1]
 [ext_resource path="res://fonts/PressStart2P-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://scenes/Start.gd" type="Script" id=3]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 0.545098 )
@@ -21,6 +22,7 @@ font_data = ExtResource( 2 )
 font_data = ExtResource( 2 )
 
 [node name="Start" type="Control"]
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
