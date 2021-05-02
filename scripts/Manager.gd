@@ -65,7 +65,7 @@ func win():
 		
 func deathSFX():
 	var sfxplayer = musicplayer.instance()
-	var sfx = load("res://sfx/Eek.wav")
+	var sfx = load("res://sfx/death.wav")
 	sfxplayer.set_stream(sfx)
 	add_child(sfxplayer)
 	sfxplayer.play()
