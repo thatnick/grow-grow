@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/catepillar_bg_test.png-4f1ea4aa5382141861f68dd55973f24f.stex"
+path="res://.import/lb1.png-107424c2c48ba2b6c5b387e06fae6654.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/background/catepillar_bg_test.png"
-dest_files=[ "res://.import/catepillar_bg_test.png-4f1ea4aa5382141861f68dd55973f24f.stex" ]
+source_file="res://sprites/enemies/lb1.png"
+dest_files=[ "res://.import/lb1.png-107424c2c48ba2b6c5b387e06fae6654.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

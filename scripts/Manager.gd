@@ -1,6 +1,6 @@
 extends Node
 
-var rng = RandomNumberGenerator.new()
+var rng
 const TAILS = 3
 const GOAL = 5
 const LVLTOTAL = 3
@@ -14,9 +14,9 @@ var tails = 3
 var lvl = 1
 
 func _ready():
-	randomize()
+	rng = RandomNumberGenerator.new()
 	rng.randomize()
-
+	randomize()
 
 func _physics_process(delta):
 	if tails >= GOAL:

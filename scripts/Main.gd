@@ -29,9 +29,15 @@ func spawn_collectable():
 	call_deferred("add_child", new_collectable)
 
 func spawn_enemy():
+	$EnemyPath/EnemySpawnLocation.offset = randi()
 	var new_enemy = enemy.instance()
-	new_enemy.position = get_rand_pos()
+	
+	var direction = $EnemyPath/EnemySpawnLocation.rotation + PI / 2
+	new_enemy.position = $EnemyPath/EnemySpawnLocation.position
+	direction += rand_range(-PI / 4, PI / 4)
+	new_enemy.rotation = direction
 	add_child(new_enemy)
+	new_enemy.velocity = Vector2(new_enemy.speed, -1).rotated(direction)
 	
 func get_rand_pos():
 	return Vector2(

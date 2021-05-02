@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Terrain_1.png-b001405610af3d288232c5a04c708b08.stex"
+path="res://.import/Caterpillar Background_2_allgreen.png-e0c4b9d775dbc1fe36cf66cd7d5b3c20.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/background/Terrain_1.png"
-dest_files=[ "res://.import/Terrain_1.png-b001405610af3d288232c5a04c708b08.stex" ]
+source_file="res://sprites/background/Caterpillar Background_2_allgreen.png"
+dest_files=[ "res://.import/Caterpillar Background_2_allgreen.png-e0c4b9d775dbc1fe36cf66cd7d5b3c20.stex" ]
 
 [params]
 
@@ -19,8 +19,8 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=1
-flags/filter=true
+flags/repeat=0
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
