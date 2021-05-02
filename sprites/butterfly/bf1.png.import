@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bf1.png-e40f6d72d3f54367546ae498fd02c556.stex"
+path="res://.import/bf1.png-e57d4f6633eec1c721e196b32f326214.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/butterfly/Bf1.png"
-dest_files=[ "res://.import/Bf1.png-e40f6d72d3f54367546ae498fd02c556.stex" ]
+source_file="res://sprites/butterfly/bf1.png"
+dest_files=[ "res://.import/bf1.png-e57d4f6633eec1c721e196b32f326214.stex" ]
 
 [params]
 

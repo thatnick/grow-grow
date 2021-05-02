@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bf3.png-83eaefdc28df417eb916e2b1a022f451.stex"
+path="res://.import/Lb3.png-f8bb5528be2ce511c9fa8c724fccf1d4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/butterfly/bf3.png"
-dest_files=[ "res://.import/bf3.png-83eaefdc28df417eb916e2b1a022f451.stex" ]
+source_file="res://sprites/enemies/lb/Lb3.png"
+dest_files=[ "res://.import/Lb3.png-f8bb5528be2ce511c9fa8c724fccf1d4.stex" ]
 
 [params]
 
