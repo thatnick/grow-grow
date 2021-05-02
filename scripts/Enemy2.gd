@@ -1,11 +1,13 @@
 extends KinematicBody2D
 
 var speed = 50
-var velocity = Vector2()
-var dir = Vector2()
+var velocity
+var dir
 
 func _ready():
-	on_spawn()
+	dir += rand_range(-PI / 4, PI / 4)
+	rotation = dir
+	velocity = Vector2(speed, -1).rotated(dir)
 
 func _physics_process(delta):
 	rotation = velocity.angle()
@@ -18,9 +20,4 @@ func _physics_process(delta):
 
 	if collision:
 		velocity = velocity.bounce(collision.normal)
-
-func _on_VisibilityNotifier2D_screen_entered():
-	$CollisionShape2D.disabled = false
-
-func on_spawn():
-	$CollisionShape2D.disabled = true
+	
