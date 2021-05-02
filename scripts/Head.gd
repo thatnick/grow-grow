@@ -11,8 +11,8 @@ func _physics_process(_delta):
 	get_input()
 	set_move_anim_sfx()	
 	velocity = move_and_slide(velocity)
-	
 	set_rotation(direction)
+	print("head pos", position)
 
 
 func get_input():

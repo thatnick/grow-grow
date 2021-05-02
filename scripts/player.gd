@@ -10,7 +10,6 @@ const musicplayer = preload("res://scenes/MusicPlayer.tscn")
 func _physics_process(delta):
 	moving = $Head.moving
 
-
 func _on_Collectable_collected(value):
 	manager.tails += value
 	add_tail()
