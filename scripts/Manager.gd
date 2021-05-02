@@ -1,5 +1,6 @@
 extends Node
 
+var rng = RandomNumberGenerator.new()
 const TAILS = 3
 const GOAL = 5
 const LVLTOTAL = 3
@@ -11,6 +12,10 @@ var tails = 3
 #What their win state is. 
 #Their difficulty - e.g. freq, type, num of enemies
 var lvl = 1
+
+func _ready():
+	randomize()
+	rng.randomize()
 
 
 func _physics_process(delta):
