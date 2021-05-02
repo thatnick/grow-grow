@@ -9,7 +9,7 @@ var moving = false
 
 func _physics_process(_delta):
 	get_input()
-	set_move_anim()	
+	set_move_anim_sfx()	
 	velocity = move_and_slide(velocity)
 	
 	set_rotation(direction)
@@ -42,13 +42,16 @@ func update_moving():
 	else:
 		moving = false
 		
-func set_move_anim():
+func set_move_anim_sfx():
+	#set the animation
 	if not moving && $AnimatedSprite.get_animation() != "Idle":
-		#switch to idle animation
 		$AnimatedSprite.set_animation("Idle")
 	if moving && $AnimatedSprite.get_animation() != "Walking":
-		#switch to the Walking animation
 		$AnimatedSprite.set_animation("Walking")
-
+	#set the move sound
+	if not moving && $SoundMove.is_playing():
+		$SoundMove.stop()
+	if moving && not $SoundMove.is_playing():
+		$SoundMove.play()
 	pass
 	
