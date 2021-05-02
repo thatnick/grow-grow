@@ -1,10 +1,23 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://sprites/enemies/louse1.png" type="Texture" id=1]
+[ext_resource path="res://sprites/enemies/louse/Louse2.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Enemy1.gd" type="Script" id=2]
+[ext_resource path="res://sprites/enemies/louse/Louse1.png" type="Texture" id=3]
+[ext_resource path="res://sprites/enemies/louse/Louse3.png" type="Texture" id=4]
+[ext_resource path="res://sprites/enemies/louse/Louse5.png" type="Texture" id=5]
+[ext_resource path="res://sprites/enemies/louse/Louse4.png" type="Texture" id=6]
+[ext_resource path="res://sprites/enemies/louse/Louse6.png" type="Texture" id=7]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 13.3855
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [node name="Enemy1" type="KinematicBody2D"]
 collision_layer = 4
@@ -14,9 +27,11 @@ script = ExtResource( 2 )
 position = Vector2( -0.370312, 0.90648 )
 shape = SubResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 2.84211, -3.86018 )
-texture = ExtResource( 1 )
+frames = SubResource( 2 )
+frame = 1
+playing = true
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
 position = Vector2( -0.732529, -0.0199201 )

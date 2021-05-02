@@ -1,10 +1,25 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://sprites/enemies/lb1.png" type="Texture" id=1]
+[ext_resource path="res://sprites/enemies/lb/Lb6.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Enemy2.gd" type="Script" id=2]
+[ext_resource path="res://sprites/enemies/lb/Lb7.png" type="Texture" id=3]
+[ext_resource path="res://sprites/enemies/lb/Lb5.png" type="Texture" id=4]
+[ext_resource path="res://sprites/enemies/lb/Lb2.png" type="Texture" id=5]
+[ext_resource path="res://sprites/enemies/lb/Lb1.png" type="Texture" id=6]
+[ext_resource path="res://sprites/enemies/lb/Lb3.png" type="Texture" id=7]
+[ext_resource path="res://sprites/enemies/lb/Lb4.png" type="Texture" id=8]
+[ext_resource path="res://sprites/enemies/lb/Lb8.png" type="Texture" id=9]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 13.3855
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 12.0
+} ]
 
 [node name="Enemy2" type="KinematicBody2D"]
 collision_layer = 16
@@ -13,6 +28,8 @@ script = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite" type="AnimatedSprite" parent="."]
 rotation = -1.5708
-texture = ExtResource( 1 )
+frames = SubResource( 2 )
+frame = 3
+playing = true
