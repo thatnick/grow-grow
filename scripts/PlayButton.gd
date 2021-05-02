@@ -1,4 +1,6 @@
 extends Button
 
+onready var manager = get_node("/root/Manager")
+
 func _on_PlayButton_pressed():
-	get_tree().change_scene("res://scenes/Main.tscn")
+	manager.new_game()
