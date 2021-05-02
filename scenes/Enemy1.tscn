@@ -22,4 +22,4 @@ texture = ExtResource( 1 )
 position = Vector2( -0.732529, -0.0199201 )
 scale = Vector2( 0.488475, 0.396004 )
 
-[connection signal="screen_entered" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_entered"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
