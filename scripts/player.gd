@@ -1,6 +1,6 @@
 extends Node
 
-var tail = preload("res://scenes/Tail.tscn")
+const tail = preload("res://scenes/Tail.tscn")
 var speed  = 80
 var score = 0
 	
@@ -14,4 +14,4 @@ func add_tail():
 	var offset = Vector2(cos(last_tail.rotation + PI), sin(last_tail.rotation + PI)) * 32
 	new_tail.position = last_tail.position + offset
 	speed += 3
-	add_child(new_tail)
+	call_deferred("add_child", new_tail)

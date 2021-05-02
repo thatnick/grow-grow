@@ -1,11 +1,10 @@
 extends KinematicBody2D
 
-var velocity = Vector2(0, 0)
+var velocity = Vector2()
 var direction = Vector2().angle()
 
 func get_input():
 	velocity = Vector2()
-	var moving = false
 	if Input.is_action_pressed("ui_right"):
 		velocity.x += 1
 		direction = velocity.angle()
@@ -21,7 +20,7 @@ func get_input():
 	
 	velocity = velocity.normalized() * get_parent().speed
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	get_input()
 	velocity = move_and_slide(velocity)
 	

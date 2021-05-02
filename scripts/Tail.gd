@@ -8,7 +8,7 @@ func _ready():
 	
 	set_rotation(direction.angle())
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var next_child_up = get_parent().get_child(self.get_position_in_parent() - 1)
 	var dist_to_parent = position.distance_to(next_child_up.position)
 	var direction = position.direction_to(next_child_up.position)

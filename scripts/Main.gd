@@ -19,7 +19,7 @@ func _ready():
 	$EnemyTimer.start(10)
 	$EnemyTimer.connect("timeout", self, "_on_EnemyTimer_timeout")
 
-func _on_Collectable_collected(value):
+func _on_Collectable_collected(_value):
 	spawn_collectable()
 
 func _on_EnemyTimer_timeout():
@@ -31,7 +31,7 @@ func spawn_collectable():
 	new_collectable.connect("collected", self, "_on_Collectable_collected")
 	new_collectable.connect("collected", $Player, "_on_Collectable_collected")
 	new_collectable.position = get_rand_pos()
-	add_child(new_collectable)
+	call_deferred("add_child", new_collectable)
 
 func spawn_enemy():
 	var new_enemy = enemy.instance()
