@@ -1,6 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://sprites/background/Caterpillar Background_2.png" type="Texture" id=1]
+[ext_resource path="res://scenes/Background.gd" type="Script" id=2]
+[ext_resource path="res://sprites/background/Caterpillar Background_2_allgreen.png" type="Texture" id=3]
+[ext_resource path="res://sprites/background/Caterpillar Background_2_grey.png" type="Texture" id=4]
+[ext_resource path="res://sprites/background/Caterpillar Background_2_brown.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 568, 8 )
@@ -13,6 +17,8 @@ position = Vector2( 536, 302 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 1072, 603 )
+script = ExtResource( 2 )
+backgrounds = [ ExtResource( 1 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ) ]
 
 [node name="TopBumper" type="StaticBody2D" parent="."]
 position = Vector2( 7.99994, -656 )
