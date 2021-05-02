@@ -7,7 +7,7 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 14.9513
 
-[node name="PhysicHead" type="KinematicBody2D"]
+[node name="Head" type="KinematicBody2D"]
 collision_mask = 17
 script = ExtResource( 1 )
 
