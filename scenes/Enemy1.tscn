@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://sprites/enemies/louse1.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Enemy1.gd" type="Script" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 13.3855
+
+[node name="Enemy1" type="KinematicBody2D"]
+collision_layer = 4
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.370312, 0.90648 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 2.84211, -3.86018 )
+texture = ExtResource( 1 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+position = Vector2( -0.732529, -0.0199201 )
+scale = Vector2( 0.488475, 0.396004 )
+
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

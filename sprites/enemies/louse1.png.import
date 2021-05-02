@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/EVILCatHead3_singleframe.png-388400da5a53b9d9600ac1a6258a14ff.stex"
+path="res://.import/louse1.png-c0df2fe2c830843bc9cbe44148d8c1f4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/enemies/EVILCatHead3_singleframe.png"
-dest_files=[ "res://.import/EVILCatHead3_singleframe.png-388400da5a53b9d9600ac1a6258a14ff.stex" ]
+source_file="res://sprites/enemies/louse1.png"
+dest_files=[ "res://.import/louse1.png-c0df2fe2c830843bc9cbe44148d8c1f4.stex" ]
 
 [params]
 
