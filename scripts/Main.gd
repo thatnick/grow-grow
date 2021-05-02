@@ -27,15 +27,14 @@ func _on_Collectable_collected(_value):
 	spawn_collectable()
 
 func _on_EnemyTimer_timeout():
-	for i in manager.lvl:
-		if manager.lvl == 1:
-			spawn_enemy(enemy1, 6)
-		elif manager.lvl >= 1:
-			spawn_enemy(enemy1, 1)
-		if manager.lvl >= 2:
-			spawn_enemy(enemy2, 1)
-		if manager.lvl >= 3:
-			spawn_enemy(enemy3, 1)
+	if manager.lvl == 1:
+		spawn_enemy(enemy1, 3)
+	elif manager.lvl >= 1:
+		spawn_enemy(enemy1, 1)
+	if manager.lvl >= 2:
+		spawn_enemy(enemy2, 1)
+	if manager.lvl >= 3:
+		spawn_enemy(enemy3, 1)
 
 func spawn_collectable():
 	var new_collectable = collectable.instance()

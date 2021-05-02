@@ -2,7 +2,7 @@ extends Node
 
 var rng
 const TAILS = 3
-const GOAL = 5
+const GOAL = 10
 const LVLTOTAL = 3
 
 var tails = 3
@@ -11,7 +11,7 @@ var tails = 3
 const musicplayer = preload("res://scenes/MusicPlayer.tscn")
 var IntroMusic = load("res://music/Intro.mp3")
 var Music = load("res://music/Music.mp3")
-var Congrat = load("res://music/Congrat.mp3")
+var Congrat = load("res://music/Congrat2.mp3")
 var GameOver = load("res://music/GameOver.mp3")
 
 var music_player

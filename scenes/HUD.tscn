@@ -58,7 +58,7 @@ margin_top = 39.63
 margin_right = 1052.16
 margin_bottom = 87.63
 custom_fonts/font = SubResource( 2 )
-text = "/"
+text = "/ "
 __meta__ = {
 "_edit_use_anchors_": false
 }
