@@ -58,10 +58,10 @@ align = 1
 valign = 1
 
 [node name="Instructions" type="Panel" parent="."]
-margin_left = 18.386
-margin_top = 452.149
-margin_right = 590.385
-margin_bottom = 596.149
+margin_left = 18.0
+margin_top = 452.0
+margin_right = 871.0
+margin_bottom = 596.0
 custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -69,9 +69,9 @@ __meta__ = {
 
 [node name="Label" type="Label" parent="Instructions"]
 margin_left = 25.7506
-margin_top = 7.16621
-margin_right = 553.751
-margin_bottom = 137.166
+margin_top = 5.48439
+margin_right = 825.751
+margin_bottom = 135.484
 custom_fonts/font = SubResource( 3 )
 text = "Instructions:
 
@@ -79,7 +79,10 @@ Use arrow keys to move around.
 
 Eat leaves to grow.
 
-Don't get eaten."
+Don't get run out of body or have your head eaten."
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="PlayButton" type="Button" parent="."]
 margin_left = 391.385
