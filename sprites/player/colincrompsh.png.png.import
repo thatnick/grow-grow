@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Colincrompsh.png.png-b93871050367e87e05569122f1f2d0d6.stex"
+path="res://.import/colincrompsh.png.png-2aeb6022d81d14b3ae51b6db1fa9627e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/player/Colincrompsh.png.png"
-dest_files=[ "res://.import/Colincrompsh.png.png-b93871050367e87e05569122f1f2d0d6.stex" ]
+source_file="res://sprites/player/colincrompsh.png.png"
+dest_files=[ "res://.import/colincrompsh.png.png-2aeb6022d81d14b3ae51b6db1fa9627e.stex" ]
 
 [params]
 
