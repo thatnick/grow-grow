@@ -2,8 +2,8 @@ extends Node
 
 onready var manager = get_node("/root/Manager")
 const tail = preload("res://scenes/Tail.tscn")
-var speed  = 80
-const speed_increment = 3
+var speed  = 120
+const speed_increment = 5
 	
 func _on_Collectable_collected(value):
 	manager.tails += value

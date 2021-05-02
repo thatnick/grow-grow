@@ -1,7 +1,6 @@
 extends Node
 
-const NUM_COLLECTABLES = 20
-const NUM_ENEMIES = 20
+const NUM_ENEMIES = 5
 const background_size = Vector2(1072, 603)
 const collectable = preload("res://scenes/Collectable.tscn")
 const enemy = preload("res://scenes/Enemy.tscn")
@@ -11,8 +10,7 @@ func _ready():
 	randomize()
 	rng.randomize()
 	
-	for i in NUM_COLLECTABLES:
-		spawn_collectable()
+	spawn_collectable()
 	for i in NUM_ENEMIES:
 		spawn_enemy()
 	
@@ -23,7 +21,7 @@ func _on_Collectable_collected(_value):
 	spawn_collectable()
 
 func _on_EnemyTimer_timeout():
-	for i in 5:
+	for i in NUM_ENEMIES:
 		spawn_enemy()
 
 func spawn_collectable():
