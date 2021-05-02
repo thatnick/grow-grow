@@ -5,7 +5,7 @@ var velocity = Vector2()
 var dir = Vector2()
 
 func _ready():
-	velocity = Vector2(speed, -1).rotated(randi() % int(PI * 2))
+	on_spawn()
 
 func _physics_process(delta):
 	rotation = velocity.angle()
@@ -18,3 +18,11 @@ func _physics_process(delta):
 		
 	if collision:
 		velocity = velocity.bounce(collision.normal)
+
+func _on_VisibilityNotifier2D_screen_entered():
+	pass
+	#$CollisionShape2D.disabled = false
+
+func on_spawn():
+	$CollisionShape2D.disabled = true
+	velocity = Vector2(speed, -1).rotated(randi() % int(PI * 2))

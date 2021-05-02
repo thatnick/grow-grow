@@ -1,15 +1,12 @@
 extends Node
 
+onready var manager = get_node("/root/Manager")
 const NUM_ENEMIES = 5
 const background_size = Vector2(1072, 603)
 const collectable = preload("res://scenes/Collectable.tscn")
 const enemy = preload("res://scenes/Enemy.tscn")
-var rng = RandomNumberGenerator.new()
 
 func _ready():
-	randomize()
-	rng.randomize()
-	
 	spawn_collectable()
 	for i in NUM_ENEMIES:
 		spawn_enemy()
@@ -38,6 +35,6 @@ func spawn_enemy():
 	
 func get_rand_pos():
 	return Vector2(
-		rng.randi_range(32, background_size.x - 32),
-		rng.randi_range(32, background_size.y - 32)
+		manager.rng.randi_range(32, background_size.x - 32),
+		manager.rng.randi_range(32, background_size.y - 32)
 	)
