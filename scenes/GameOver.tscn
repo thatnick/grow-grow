@@ -25,35 +25,37 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 649.0
-margin_bottom = 645.0
+margin_right = 1096.0
+margin_bottom = 624.0
 color = Color( 0.247059, 0.411765, 0.372549, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="GameOver" type="Panel" parent="."]
-margin_left = 62.347
-margin_top = 96.7653
-margin_right = 560.347
-margin_bottom = 261.765
+margin_left = 11.347
+margin_top = 62.6632
+margin_right = 1064.35
+margin_bottom = 562.663
 custom_styles/panel = SubResource( 1 )
 
 [node name="Label" type="Label" parent="GameOver"]
-margin_left = 20.8775
-margin_top = 1.88776
-margin_right = 490.878
-margin_bottom = 166.888
+margin_left = 170.01
+margin_top = 62.2957
+margin_right = 938.01
+margin_bottom = 227.296
 custom_fonts/font = SubResource( 2 )
-text = "Game Over"
+text = "Game Over.
+
+You got eaten :("
 align = 1
 valign = 1
 
 [node name="PlayAgain" type="Button" parent="."]
-margin_left = 126.479
-margin_top = 351.121
-margin_right = 522.479
-margin_bottom = 456.121
+margin_left = 343.57
+margin_top = 398.315
+margin_right = 739.57
+margin_bottom = 503.315
 custom_fonts/font = SubResource( 3 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0.968627, 1, 0, 1 )
