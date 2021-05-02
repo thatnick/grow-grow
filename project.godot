@@ -21,6 +21,8 @@ Manager="*res://scripts/Manager.gd"
 
 window/size/width=640
 window/size/height=640
+window/size/test_width=640
+window/size/test_height=640
 
 [global]
 

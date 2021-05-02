@@ -11,27 +11,27 @@ corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
 
 [sub_resource type="DynamicFont" id=2]
-size = 64
+size = 48
 font_data = ExtResource( 1 )
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 2 )
 
 [node name="Panel" type="Panel" parent="."]
-margin_left = 465.0
+margin_left = 485.0
 margin_top = 16.0
 margin_right = 627.0
-margin_bottom = 119.0
+margin_bottom = 79.0
 custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Tails" type="Label" parent="."]
-margin_left = 484.331
-margin_top = 40.087
-margin_right = 612.331
-margin_bottom = 104.087
+margin_left = 510.969
+margin_top = 28.0135
+margin_right = 606.969
+margin_bottom = 76.0135
 custom_fonts/font = SubResource( 2 )
 text = "##"
 __meta__ = {

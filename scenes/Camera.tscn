@@ -2,6 +2,7 @@
 
 [node name="Camera2D" type="Camera2D"]
 current = true
+zoom = Vector2( 2, 2 )
 limit_left = -200
 limit_top = -200
 limit_right = 1024
