@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/Head.gd" type="Script" id=1]
-[ext_resource path="res://sprites/player/colinhead1.png.png" type="Texture" id=2]
-[ext_resource path="res://sprites/player/colincrompsh.png.png" type="Texture" id=3]
-[ext_resource path="res://sfx/clicks.wav" type="AudioStream" id=4]
+[ext_resource path="res://sprites/player/Colinhead1.png.png" type="Texture" id=2]
+[ext_resource path="res://sprites/player/Colincrompsh.png.png" type="Texture" id=3]
+[ext_resource path="res://sfx/Clicks.wav" type="AudioStream" id=4]
+[ext_resource path="res://sfx/Eek.wav" type="AudioStream" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -29,7 +30,6 @@ script = ExtResource( 1 )
 rotation = -1.5708
 frames = SubResource( 1 )
 animation = "Walking"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -38,3 +38,6 @@ shape = SubResource( 2 )
 
 [node name="SoundMove" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+
+[node name="SoundDeath" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )

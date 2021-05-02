@@ -5,7 +5,7 @@ const tail = preload("res://scenes/Tail.tscn")
 var speed  = 120
 var moving = false
 const speed_increment = 5
-	
+const musicplayer = preload("res://scenes/MusicPlayer.tscn")
 	
 func _physics_process(delta):
 	moving = $Head.moving
@@ -28,3 +28,13 @@ func tail_hit():
 		manager.game_over()
 	if speed >= 80:
 		speed -= speed_increment
+	eek_sfx()
+
+func eek_sfx():
+	var sfxplayer = musicplayer.instance()
+	var sfx = load("res://sfx/Eek.wav")
+	sfxplayer.set_stream(sfx)
+	add_child(sfxplayer)
+	sfxplayer.play()
+	yield(sfxplayer, "finished")
+	sfxplayer.queue_free()

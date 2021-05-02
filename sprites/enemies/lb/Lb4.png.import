@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Colinwalk2.png-71cbcec850fb849ccffa3de202089e83.stex"
+path="res://.import/Lb4.png-1a13e242b2cd2894aad192bac285f84f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/player/Colinwalk2.png"
-dest_files=[ "res://.import/Colinwalk2.png-71cbcec850fb849ccffa3de202089e83.stex" ]
+source_file="res://sprites/enemies/lb/Lb4.png"
+dest_files=[ "res://.import/Lb4.png-1a13e242b2cd2894aad192bac285f84f.stex" ]
 
 [params]
 

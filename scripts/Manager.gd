@@ -43,6 +43,7 @@ func _physics_process(delta):
 func game_over():
 	reset()
 	get_tree().change_scene("res://scenes/GameOver.tscn")
+	deathSFX() 
 	
 
 func new_game():
@@ -60,3 +61,13 @@ func win():
 		get_tree().change_scene("res://scenes/NewStage.tscn")
 	else:
 		get_tree().change_scene("res://scenes/Win.tscn")
+		
+		
+func deathSFX():
+	var sfxplayer = musicplayer.instance()
+	var sfx = load("res://sfx/death.wav")
+	sfxplayer.set_stream(sfx)
+	add_child(sfxplayer)
+	sfxplayer.play()
+	yield(sfxplayer, "finished")
+	sfxplayer.queue_free()

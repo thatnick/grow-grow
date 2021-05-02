@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Colinwalk2.png-71cbcec850fb849ccffa3de202089e83.stex"
+path="res://.import/bf12.png-4f6994c5ebc3b45dae52c7fdea42d8da.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/player/Colinwalk2.png"
-dest_files=[ "res://.import/Colinwalk2.png-71cbcec850fb849ccffa3de202089e83.stex" ]
+source_file="res://sprites/butterfly/bf12.png"
+dest_files=[ "res://.import/bf12.png-4f6994c5ebc3b45dae52c7fdea42d8da.stex" ]
 
 [params]
 

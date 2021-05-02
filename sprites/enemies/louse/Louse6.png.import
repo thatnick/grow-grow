@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Colinwalk2.png-71cbcec850fb849ccffa3de202089e83.stex"
+path="res://.import/Louse6.png-7a4e941d54e8ba52fa801e9771d49675.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/player/Colinwalk2.png"
-dest_files=[ "res://.import/Colinwalk2.png-71cbcec850fb849ccffa3de202089e83.stex" ]
+source_file="res://sprites/enemies/louse/Louse6.png"
+dest_files=[ "res://.import/Louse6.png-7a4e941d54e8ba52fa801e9771d49675.stex" ]
 
 [params]
 
