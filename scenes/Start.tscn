@@ -2,7 +2,7 @@
 
 [ext_resource path="res://scripts/PlayButton.gd" type="Script" id=1]
 [ext_resource path="res://fonts/PressStart2P-Regular.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://scenes/Start.gd" type="Script" id=3]
+[ext_resource path="res://scripts/Start.gd" type="Script" id=3]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 0.545098 )
