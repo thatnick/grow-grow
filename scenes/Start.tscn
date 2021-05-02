@@ -69,9 +69,9 @@ __meta__ = {
 
 [node name="Label" type="Label" parent="Instructions"]
 margin_left = 25.7506
-margin_top = 5.48439
+margin_top = 5.04384
 margin_right = 825.751
-margin_bottom = 135.484
+margin_bottom = 135.044
 custom_fonts/font = SubResource( 3 )
 text = "Instructions:
 

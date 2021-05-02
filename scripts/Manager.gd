@@ -14,6 +14,8 @@ var Music = load("res://music/Music.mp3")
 var Congrat = load("res://music/Congrat.mp3")
 var GameOver = load("res://music/GameOver.mp3")
 
+var music_player
+
 
 
 #variables for levels - levels need to know: 
@@ -30,10 +32,10 @@ func _ready():
 	rng.randomize()
 	randomize()
 	
-	var music = musicplayer.instance()
-	add_child(music)
-	music.set_stream(IntroMusic) 
-	music.play()
+	music_player = musicplayer.instance()
+	add_child(music_player)
+	music_player.set_stream(IntroMusic) 
+	music_player.play()
 
 func _physics_process(delta):
 	if tails >= GOAL:
@@ -44,12 +46,15 @@ func game_over():
 	reset()
 	get_tree().change_scene("res://scenes/GameOver.tscn")
 	deathSFX() 
-	
+	music_player.set_stream(GameOver) 
+	music_player.play()
 
 func new_game():
 	reset()
 	lvl = 1
 	get_tree().change_scene("res://scenes/NewStage.tscn")
+	music_player.set_stream(Music) 
+	music_player.play()
 	
 func reset():
 	tails = TAILS
@@ -61,6 +66,8 @@ func win():
 		get_tree().change_scene("res://scenes/NewStage.tscn")
 	else:
 		get_tree().change_scene("res://scenes/Win.tscn")
+		music_player.set_stream(Congrat) 
+		music_player.play()
 		
 		
 func deathSFX():
