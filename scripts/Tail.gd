@@ -21,4 +21,5 @@ func _physics_process(_delta):
 		velocity = move_and_slide(velocity * (get_parent().speed * speed_multiplier))
 	
 func hit():
+	get_parent().tail_hit()
 	queue_free()
