@@ -3,41 +3,41 @@
 [ext_resource path="res://sprites/background/Terrain_1.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 680, 8 )
+extents = Vector2( 568, 8 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 24, 680 )
+extents = Vector2( 24, 312 )
 
 [node name="Background" type="Sprite"]
-position = Vector2( 640, 640 )
+position = Vector2( 536, 302 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 0, 0, 1280, 1280 )
+region_rect = Rect2( 0, 0, 1072, 603 )
 
 [node name="TopBumper" type="StaticBody2D" parent="."]
 position = Vector2( 7.99994, -656 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TopBumper"]
-position = Vector2( -32, 8 )
+position = Vector2( -7.99994, 346 )
 shape = SubResource( 1 )
 
 [node name="BottomBumper" type="StaticBody2D" parent="."]
 position = Vector2( 15.9999, 656 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BottomBumper"]
-position = Vector2( 0, -8 )
+position = Vector2( 0.00012207, -347 )
 shape = SubResource( 1 )
 
 [node name="LeftBumper" type="StaticBody2D" parent="."]
 position = Vector2( -664, 16 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftBumper"]
-position = Vector2( 0, -16 )
+position = Vector2( 104, -14 )
 shape = SubResource( 2 )
 
 [node name="RightBumper" type="StaticBody2D" parent="."]
 position = Vector2( 656, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightBumper"]
-position = Vector2( 7.99994, 24 )
+position = Vector2( -96.0001, 2 )
 shape = SubResource( 2 )

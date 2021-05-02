@@ -2,7 +2,7 @@ extends Node
 
 const NUM_COLLECTABLES = 20
 const NUM_ENEMIES = 20
-const background_size = Vector2(1280, 1280)
+const background_size = Vector2(1072, 603)
 const collectable = preload("res://scenes/Collectable.tscn")
 const enemy = preload("res://scenes/Enemy.tscn")
 var rng = RandomNumberGenerator.new()
