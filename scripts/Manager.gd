@@ -2,7 +2,7 @@ extends Node
 
 var rng = RandomNumberGenerator.new()
 const TAILS = 3
-const GOAL = 5
+const GOAL = 10
 const LVLTOTAL = 3
 
 var tails = 3
