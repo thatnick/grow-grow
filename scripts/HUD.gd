@@ -1,16 +1,9 @@
 extends CanvasLayer
 
-var score
+onready var manager = get_node("/root/Manager")
 
 func _ready():
-	get_score()
+	$Tails.text = str(manager.tails)
 	
 func _physics_process(_delta):
-	get_score()
-	
-func get_score():
-	if get_parent().has_node("Player"):
-		score = get_parent().get_node("Player").score
-	else:
-		score = "##"
-	$Score.text = str(score)
+	$Tails.text = str(manager.tails)

@@ -13,6 +13,10 @@ config_version=4
 config/name="spring_jam"
 run/main_scene="res://scenes/Start.tscn"
 
+[autoload]
+
+Manager="*res://scripts/Manager.gd"
+
 [display]
 
 window/size/width=640

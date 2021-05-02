@@ -1,12 +1,12 @@
 extends Node
 
+onready var manager = get_node("/root/Manager")
 const tail = preload("res://scenes/Tail.tscn")
 var speed  = 80
-var score = 3
 const speed_increment = 3
 	
 func _on_Collectable_collected(value):
-	score += value
+	manager.tails += value
 	add_tail()
 
 func add_tail():
@@ -18,6 +18,6 @@ func add_tail():
 	call_deferred("add_child", new_tail)
 
 func tail_hit():
-	score -= 1
+	manager.tails -= 1
 	if speed >= 80:
 		speed -= speed_increment
