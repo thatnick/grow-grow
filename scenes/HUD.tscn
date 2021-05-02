@@ -26,20 +26,20 @@ font_data = ExtResource( 1 )
 script = ExtResource( 2 )
 
 [node name="Score" type="Panel" parent="."]
-margin_left = 532.0
-margin_top = 16.0
-margin_right = 627.0
-margin_bottom = 79.0
+margin_left = 936.456
+margin_top = 24.009
+margin_right = 1031.46
+margin_bottom = 87.009
 custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Tails" type="Label" parent="."]
-margin_left = 547.677
-margin_top = 32.5084
-margin_right = 643.677
-margin_bottom = 80.5084
+margin_left = 952.133
+margin_top = 40.5174
+margin_right = 1048.13
+margin_bottom = 88.5174
 custom_fonts/font = SubResource( 2 )
 text = "##"
 __meta__ = {
@@ -47,20 +47,20 @@ __meta__ = {
 }
 
 [node name="Lvl" type="Panel" parent="."]
-margin_left = 8.0
-margin_top = 16.0
-margin_right = 190.0
-margin_bottom = 79.0
+margin_left = 16.009
+margin_top = 24.009
+margin_right = 198.009
+margin_bottom = 87.009
 custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="LvlTxt" type="Label" parent="."]
-margin_left = 23.2508
-margin_top = 34.2339
-margin_right = 119.251
-margin_bottom = 82.2339
+margin_left = 31.2598
+margin_top = 42.2429
+margin_right = 127.26
+margin_bottom = 90.2429
 custom_fonts/font = SubResource( 3 )
 text = "Lvl"
 __meta__ = {
@@ -68,10 +68,10 @@ __meta__ = {
 }
 
 [node name="LvlNum" type="Label" parent="."]
-margin_left = 140.868
-margin_top = 34.2339
-margin_right = 189.868
-margin_bottom = 82.2339
+margin_left = 148.877
+margin_top = 42.2429
+margin_right = 197.877
+margin_bottom = 90.2429
 custom_fonts/font = SubResource( 4 )
 text = "#"
 __meta__ = {

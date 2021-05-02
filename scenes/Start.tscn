@@ -26,40 +26,40 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -1.25995
-margin_right = 637.74
-margin_bottom = 637.0
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 1081.0
+margin_bottom = 618.0
 color = Color( 0.388235, 0.631373, 0.309804, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Title" type="Panel" parent="."]
-margin_left = 42.3245
-margin_top = 59.054
-margin_right = 614.324
-margin_bottom = 203.054
+margin_left = 32.0793
+margin_top = 31.7401
+margin_right = 1035.08
+margin_bottom = 175.74
 custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="Title"]
-margin_left = 28.2705
-margin_top = 10.946
-margin_right = 556.271
-margin_bottom = 131.946
+margin_left = 55.9887
+margin_top = 12.2059
+margin_right = 967.989
+margin_bottom = 133.206
 custom_fonts/font = SubResource( 2 )
-text = "GrowGrow
-Caterpillar"
+text = "GrowGrowCaterpillar"
 align = 1
 valign = 1
 
 [node name="Instructions" type="Panel" parent="."]
-margin_left = 36.0249
-margin_top = 474.828
-margin_right = 608.024
-margin_bottom = 618.828
+margin_left = 18.386
+margin_top = 452.149
+margin_right = 590.385
+margin_bottom = 596.149
 custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -80,10 +80,10 @@ Eat leaves to grow.
 Don't get eaten."
 
 [node name="PlayButton" type="Button" parent="."]
-margin_left = 165.859
-margin_top = 293.621
-margin_right = 482.859
-margin_bottom = 395.621
+margin_left = 391.385
+margin_top = 236.925
+margin_right = 708.385
+margin_bottom = 338.925
 custom_fonts/font = SubResource( 4 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 1, 0.992157, 0, 1 )
