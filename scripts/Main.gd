@@ -18,7 +18,7 @@ func _ready():
 	if manager.lvl == 3:
 		spawn_enemy(enemy1, 3)
 		spawn_enemy(enemy2, 3)
-		spawn_enemy(enemy3, 3)
+		spawn_enemy(enemy3, 1)
 	
 	$EnemyTimer.start(10)
 	$EnemyTimer.connect("timeout", self, "_on_EnemyTimer_timeout")
