@@ -57,7 +57,7 @@ func reset():
 func win():
 	lvl += 1
 	reset()
-	if lvl < LVLTOTAL:
+	if lvl <= LVLTOTAL:
 		get_tree().change_scene("res://scenes/NewStage.tscn")
 	else:
 		get_tree().change_scene("res://scenes/Win.tscn")
