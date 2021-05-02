@@ -19,5 +19,7 @@ func add_tail():
 
 func tail_hit():
 	manager.tails -= 1
+	if manager.tails <= 0:
+		manager.game_over()
 	if speed >= 80:
 		speed -= speed_increment

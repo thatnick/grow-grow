@@ -1,5 +1,6 @@
 extends KinematicBody2D
 
+onready var manager = get_node("/root/Manager")
 var velocity = Vector2()
 var direction = Vector2().angle()
 
@@ -27,4 +28,4 @@ func _physics_process(_delta):
 	set_rotation(direction)
 
 func hit():
-	get_tree().change_scene("res://scenes/GameOver.tscn")
+	manager.game_over()
