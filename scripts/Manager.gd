@@ -2,8 +2,16 @@ extends Node
 
 const TAILS = 3
 const GOAL = 5
+const LVLTOTAL = 3
 
 var tails = 3
+
+#variables for levels - levels need to know: 
+#what level number they are. 
+#What their win state is. 
+#Their difficulty - e.g. freq, type, num of enemies
+var lvl = 1
+
 
 func _physics_process(delta):
 	if tails >= GOAL:
@@ -17,11 +25,16 @@ func game_over():
 
 func new_game():
 	reset()
+	lvl = 1
 	get_tree().change_scene("res://scenes/Main.tscn")
 	
 func reset():
 	tails = TAILS
 
 func win():
+	lvl += 1
 	reset()
-	get_tree().change_scene("res://scenes/Win.tscn")
+	if lvl < LVLTOTAL:
+		get_tree().change_scene("res://scenes/Main.tscn")
+	else:
+		get_tree().change_scene("res://scenes/Win.tscn")
