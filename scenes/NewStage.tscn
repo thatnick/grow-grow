@@ -23,31 +23,32 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 1096.0
-margin_bottom = 617.0
-color = Color( 0.247059, 0.411765, 0.372549, 1 )
+margin_right = 1072.0
+margin_bottom = 600.0
+color = Color( 0.976471, 1, 0.654902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="msg" type="Panel" parent="."]
-margin_left = 19.3469
-margin_top = 144.174
-margin_right = 1038.35
-margin_bottom = 441.174
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 1024.0
+margin_bottom = 536.0
 custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="msg"]
-margin_left = -33.8567
-margin_top = 9.55118
-margin_right = 1070.14
-margin_bottom = 295.551
+margin_top = 8.0
+margin_right = 960.0
+margin_bottom = 472.0
 custom_fonts/font = SubResource( 2 )
 text = "New level about to
-start. Get ready!"
+start.
+
+Get ready!"
 align = 1
 valign = 1
 __meta__ = {
