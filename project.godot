@@ -8,6 +8,76 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Sprite",
+"class": "Background",
+"language": "GDScript",
+"path": "res://scripts/Background.gd"
+}, {
+"base": "Area2D",
+"class": "Collectable",
+"language": "GDScript",
+"path": "res://scripts/Collectable.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Enemy1",
+"language": "GDScript",
+"path": "res://scripts/Enemy1.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Enemy2",
+"language": "GDScript",
+"path": "res://scripts/Enemy2.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Enemy3",
+"language": "GDScript",
+"path": "res://scripts/Enemy3.gd"
+}, {
+"base": "CanvasLayer",
+"class": "HUD",
+"language": "GDScript",
+"path": "res://scripts/HUD.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Head",
+"language": "GDScript",
+"path": "res://scripts/Head.gd"
+}, {
+"base": "Node",
+"class": "Main",
+"language": "GDScript",
+"path": "res://scripts/Main.gd"
+}, {
+"base": "Control",
+"class": "NewStage",
+"language": "GDScript",
+"path": "res://scripts/NewStage.gd"
+}, {
+"base": "Node",
+"class": "Player",
+"language": "GDScript",
+"path": "res://scripts/Player.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Tail",
+"language": "GDScript",
+"path": "res://scripts/Tail.gd"
+} ]
+_global_script_class_icons={
+"Background": "",
+"Collectable": "",
+"Enemy1": "",
+"Enemy2": "",
+"Enemy3": "",
+"HUD": "",
+"Head": "",
+"Main": "",
+"NewStage": "",
+"Player": "",
+"Tail": ""
+}
+
 [application]
 
 config/name="spring_jam"
