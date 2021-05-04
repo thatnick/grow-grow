@@ -1,11 +1,12 @@
 extends KinematicBody2D
+class_name Enemy3
 
 var speed = 20
-var velocity
-var dir
-var player
+var velocity: Vector2
+var dir: float
+var player: Node2D
 
-func _physics_process(delta):
+func _physics_process(_delta) -> void:
 	velocity = Vector2(speed, -1).rotated(dir)
 	velocity = position.direction_to(player.global_position)
 	var collision = move_and_collide(velocity)
@@ -18,5 +19,5 @@ func _physics_process(delta):
 	if collision:
 		velocity = velocity.bounce(collision.normal)
 	
-func set_player(head):
+func set_player(head: Head) -> void:
 	player = head

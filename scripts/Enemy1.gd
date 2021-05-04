@@ -1,18 +1,19 @@
 extends KinematicBody2D
+class_name Enemy1
 
-var speed = 100
-var velocity
-var dir
+const SPEED = 100
+var velocity: Vector2
+var dir: float
 
 func _ready():
-	velocity = Vector2(speed, -1).rotated(dir)
+	velocity = Vector2(SPEED, -1).rotated(dir)
 
-func _physics_process(delta):
-	var collision = move_and_collide(velocity * delta)
+func _physics_process(delta) -> void:
+	var collision: KinematicCollision2D = move_and_collide(velocity * delta)
 
 	if collision && collision.collider.has_method("hit"):
 		queue_free()
 		collision.collider.hit()
 
-func _on_VisibilityNotifier2D_screen_exited():
+func _on_VisibilityNotifier2D_screen_exited() -> void:
 	queue_free()
