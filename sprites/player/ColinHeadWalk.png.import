@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Caterpillar Background_2_allgreen.png-e0c4b9d775dbc1fe36cf66cd7d5b3c20.stex"
+path="res://.import/ColinHeadWalk.png-0d9572e2d403577052aee5e467fd1d77.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/background/Caterpillar Background_2_allgreen.png"
-dest_files=[ "res://.import/Caterpillar Background_2_allgreen.png-e0c4b9d775dbc1fe36cf66cd7d5b3c20.stex" ]
+source_file="res://sprites/player/ColinHeadWalk.png"
+dest_files=[ "res://.import/ColinHeadWalk.png-0d9572e2d403577052aee5e467fd1d77.stex" ]
 
 [params]
 

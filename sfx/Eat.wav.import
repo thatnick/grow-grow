@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Eek.wav-f5ae6f6023a57bf9c4da3699de6cce82.sample"
+path="res://.import/Eat.wav-c6c658f9e74a7d245a8dd987ed3f2ee6.sample"
 
 [deps]
 
-source_file="res://sfx/Eek.wav"
-dest_files=[ "res://.import/Eek.wav-f5ae6f6023a57bf9c4da3699de6cce82.sample" ]
+source_file="res://sfx/Eat.wav"
+dest_files=[ "res://.import/Eat.wav-c6c658f9e74a7d245a8dd987ed3f2ee6.sample" ]
 
 [params]
 

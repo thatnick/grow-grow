@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Caterpillar Background_2_brown.png-f63cc5339e4a1d0039a19ca64c6546a6.stex"
+path="res://.import/BackgroundGrey.png-8c2d9dc5d91a39772706f8ac953c2d16.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/background/Caterpillar Background_2_brown.png"
-dest_files=[ "res://.import/Caterpillar Background_2_brown.png-f63cc5339e4a1d0039a19ca64c6546a6.stex" ]
+source_file="res://sprites/background/BackgroundGrey.png"
+dest_files=[ "res://.import/BackgroundGrey.png-8c2d9dc5d91a39772706f8ac953c2d16.stex" ]
 
 [params]
 

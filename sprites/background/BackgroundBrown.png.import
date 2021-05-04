@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Colindeadbody.png-7d0c7db36b69ff145623f81d573bf843.stex"
+path="res://.import/BackgroundBrown.png-a23b9973f8c4a949255326431fdc65ed.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/player/Colindeadbody.png"
-dest_files=[ "res://.import/Colindeadbody.png-7d0c7db36b69ff145623f81d573bf843.stex" ]
+source_file="res://sprites/background/BackgroundBrown.png"
+dest_files=[ "res://.import/BackgroundBrown.png-a23b9973f8c4a949255326431fdc65ed.stex" ]
 
 [params]
 
