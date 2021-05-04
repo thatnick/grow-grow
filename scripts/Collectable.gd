@@ -1,12 +1,10 @@
 extends Area2D
 
-signal collected(value)
+signal collected
 
-var value = 1
-
-func _on_Collectable_body_entered(body):
+func _on_Collectable_body_entered(body: KinematicBody2D) -> void:
 	if body.name == "Head":
 		$SoundCollected.play()
 		yield($SoundCollected, "finished")
-		emit_signal("collected", value)
+		emit_signal("collected")
 		queue_free()
